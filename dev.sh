@@ -3,4 +3,6 @@
 set -e
 
 wasm-pack build worker
-(cd web && npm i && npx vite dev)
+(cd web-worker && npm i && npx vite build)
+wasm-pack build main
+(cd web-main && npm i && npx vite dev)

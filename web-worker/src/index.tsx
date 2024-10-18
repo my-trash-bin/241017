@@ -1,4 +1,3 @@
-import "./style.css";
 import WorkerFactory from "./worker?worker";
 
 const worker: Worker = WorkerFactory();

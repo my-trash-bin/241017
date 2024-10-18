@@ -22,9 +22,9 @@ pub fn start_worker() {
 }
 
 async fn do_something(global_scope: DedicatedWorkerGlobalScope, data: JsValue) {
-    console::log_1(&data);
+    console::log_2(&JsValue::from_str("Worker received from main:"), &data);
 
     global_scope
-        .post_message(&JsValue::from_str("Data received and saved"))
+        .post_message(&JsValue::from_str("pong"))
         .unwrap();
 }
