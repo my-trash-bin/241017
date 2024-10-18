@@ -1,3 +1,3 @@
 [workspace]
 resolver = "2"
-members = ["wasm-worker", "wasm-all-in-one"]
+members = ["wasm-worker", "wasm-main"]
