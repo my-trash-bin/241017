@@ -1,7 +1,7 @@
 {
     "private": true,
     "dependencies": {
-      "test-241017-worker": "file:../worker/pkg",
+      "test-241017-worker": "file:../wasm-worker/pkg",
       "vite": "^5.4.8",
       "vite-plugin-singlefile": "^2.0.2",
       "vite-plugin-top-level-await": "^1.4.4",
