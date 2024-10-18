@@ -1,5 +1,5 @@
 [package]
-name = "test-241017-worker"
+name = "test-241017-all-in-one"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,14 +11,14 @@ wasm-bindgen = "0.2"
 web-sys = { version = "0.3", features = [
     "Window",
     "console",
-    "DedicatedWorkerGlobalScope",
+    "Worker",
     "MessageEvent",
-    "WorkerNavigator",
+    "Navigator",
     "StorageManager",
     "FileSystemDirectoryHandle",
     "FileSystemFileHandle",
-    "FileSystemGetFileOptions",
-    "FileSystemSyncAccessHandle",
+    "File",
+    "Blob",
 ] }
 js-sys = "0.3"
 wasm-bindgen-futures = "0.4.45"
